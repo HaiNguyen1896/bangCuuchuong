@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BẢNG CỬU CHƯƠNG</title>
+</head>
+<body>
+<div style="width: 66%;text-align: center  ">
+  <h1>BẢNG CỬU CHƯƠNG</h1>
+</div>
+</body>
+</html>
+<script>
+  let sout;
+  let kq_pheptinh;
+  sout = "<table border='1' width='800' cellspacing='0' cellpadding='3' >";
+  for (let i = 1; i<=9;i++){
+    sout = sout + "<tr>";
+      for (let j = 2; j<=9 ; j++){
+        kq_pheptinh = j * i;
+        sout = sout + "<td>" + j +"*" + i + "=" + kq_pheptinh + "</td>";
+      }
+    sout = sout + "</tr>";
+  }
+  sout=sout + "</table>";
+  document.write(sout);
+</script>
